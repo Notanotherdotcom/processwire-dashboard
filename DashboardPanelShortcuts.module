@@ -5,9 +5,10 @@ use ProcessWire\Page;
 use ProcessWire\Selectors;
 use function ProcessWire\__;
 use function ProcessWire\wireIconMarkup;
+use function ProcessWire\wire;
 
 // Include abstract panel base class
-require_once dirname(__DIR__).'/Dashboard/DashboardPanel.class.php';
+require_once wire()->config->paths->Dashboard .'/DashboardPanel.class.php';
 
 class DashboardPanelShortcuts extends DashboardPanel
 {

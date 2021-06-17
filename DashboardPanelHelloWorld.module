@@ -1,9 +1,10 @@
 <?php namespace Daun\Dashboard;
 
 use function ProcessWire\__;
+use function ProcessWire\wire;
 
 // Include abstract panel base class
-require_once dirname(__DIR__).'/Dashboard/DashboardPanel.class.php';
+require_once wire()->config->paths->Dashboard .'/DashboardPanel.class.php';
 
 class DashboardPanelHelloWorld extends DashboardPanel
 {
